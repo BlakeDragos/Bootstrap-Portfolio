@@ -1,23 +1,76 @@
 
     .navbar-brand {
-        Color: #ffffff
+        Color: #000000;
+        margin-left: -23px;
+        font-weight: bold;
+        background:rgba(255,255,255,0.5);
+        border: 2px solid #000000;
+        border-radius: 10px;
+
+    }
+    .fa-angle-double-down{
+        margin-top: 6px;
     }
 
-    .nav-header {
-        background-color: teal;
-        padding: 15px;
+    .transparent{
+        background-color: transparent;
     }
-    h1 {
+    .item {
+        color: #000000;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        margin-top: 3px;
+        text-align: center;
+        background:rgba(255,255,255,0.5);
+    }
+    
+    .item:link {
+        color: #000000;
+    }
+    .item:visited {
+        color: #000000;
+    }
+    .item:hover {
+        color: #00a0e0;
+    }
+    .item:active {
+        color: #ffffff;
+    }
+    .nav-header {
+        padding: 15px;
+        font-size: 20px;
+    }
+    .footerLink:link {
+        color: #000000;
+    }
+    .footerLink:visited {
+        color: #000000;
+    }
+    .footerLink:hover {
+        color: #00a0e0;
+    }
+    .footerLink:active {
+        color: #ffffff;
+    }
+    .h1 {
         border-bottom: 2px solid #666666;
-        color: teal;
+        color: #000000;
+    }
+    .About{
+        text-align: center;
+    }
+    .space {
+        margin-bottom: 3px;
     }
     body {
-    background: url("assets/houndstooth-pattern.png");
-    background-repeat: repeat;
-    background-color: #cccccc;
+        background: url("assets/background.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .content {
-        background-color: #ffffff;
+        background:rgba(255,255,255,0.5);
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 50px;
@@ -25,8 +78,8 @@
     }
     footer {
         margin-left: -30px;
-        background-color: #666666;
-        border-top: 4px solid teal;
+        background:rgba(255,255,255,0.5);
+        border-top: 2px solid #000000;
         bottom: 0%;
         position: fixed;
         text-align: center;
@@ -41,10 +94,34 @@
         height: 200px;
     }
     .img-thumbnail {
-        width: 150px;
-        height: 150px;
+        width: 286px;
+        height: 286px;
+    }
+    .card {
+        margin-bottom: 5px;
     }
     
     .img-thumbnail:hover {
         box-shadow: 0 0 6px 4px teal;
+    }
+    .pColor{
+        color: #000000;
+        font-weight: bold;
+
+    }
+
+    .CarouselW {
+        margin-top: 25px;
+        align-content: center;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .item{
+            margin-left: 3px;
+            margin-top: 0px;
+        }
+        .navbar-brand {
+            margin-left: 0px;
+    
+        }
     }
